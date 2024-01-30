@@ -1,17 +1,18 @@
 import random, math, time, os, json
 
+import json
+
 def createCharacter():
     print("--- Create Character ---")
     
     # Get user input for character details
     name = input("Enter your character's name: ")
     gender = input("Choose a gender(Male, Female, Other): ")
-    class_type = input("Choose a class for your character: ")
-    level = int(input("Enter the starting level for your character: "))
     
     # Create a dictionary to store character details
     character = {
-        "Name": name
+        "Name": name,
+        "Gender": gender,
         # Add more attributes as needed
     }
     
@@ -35,3 +36,5 @@ def save_character(character):
             print(f"\nCharacter data saved to {filename}")
     except Exception as e:
         print(f"\nError saving character data: {e}")
+
+createCharacter()
