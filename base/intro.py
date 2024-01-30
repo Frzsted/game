@@ -1,7 +1,5 @@
 import random, math, time, os, json
 
-import json
-
 def createCharacter():
     print("--- Create Character ---")
     
